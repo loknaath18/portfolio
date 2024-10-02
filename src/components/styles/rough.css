@@ -1,0 +1,143 @@
+body{
+    background-color: rgba(6, 31, 36, 0.9);
+}
+
+.contact-wrap {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: wheat;
+    margin-left: 200px;
+}
+.contact-wrap h3 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.contact-wrap .form-group {
+    margin-bottom: 20px;
+}
+
+.form-group .email{
+    margin-left: 135px;
+}
+.form-group{
+    width: 130%;
+}
+.contact-wrap label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.in-field::placeholder,
+textarea::placeholder {
+    color: #b7b7b7 !important;
+}
+.contact-wrap .in-field,
+.contact-wrap textarea {
+    width: 110%;
+    padding: 15px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #031f25;
+    outline: none;
+    color: #b7b7b7 !important;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out;
+}
+
+.contact-wrap input[type="text"]:focus,
+.contact-wrap input[type="email"]:focus,
+.contact-wrap textarea:focus {
+    border-color: #4d9ef7;
+    background-color: #01181d;
+}
+
+.contact-wrap textarea {
+    resize: none;
+    height: 150px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(0 126 106);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 51px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(35, 69, 64) ;
+    color: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 768px) {
+    .contact-wrap{
+        margin-left: -10px;
+    }
+    .form-group .email{
+        margin-left: 0px;
+    }
+    .form-group{
+        width: 100%;
+    }
+    
+.ftco-section {
+    background-color: rgba(4, 37, 44, 0.9);
+    margin-left: 0px !important;
+  }
+}
+.ftco-section {
+    background-color: rgba(4, 37, 44, 0.9);
+    margin-left: 0px;
+  }
+/* src/components/Footer.css */
+
+footer {
+    background-color: rgba(6, 31, 36, 0.9);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 0px;
+  }
+  
+  .footer-logo h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .footer-socials a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #1da1f2; /* Twitter blue */
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p:last-child {
+    margin-top: 5px;
+    font-style: italic;
+  }
+  

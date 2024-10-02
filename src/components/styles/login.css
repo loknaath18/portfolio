@@ -1,0 +1,266 @@
+.container1 {
+    width: 100%;
+    max-width: 400px;
+    margin:0 auto;
+    margin-top: 120px;
+}
+
+.card1 {
+    width: 100%;
+    background-color: #d4e7ef;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #a7ddf5;
+
+    .cartoon {
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 14px;
+            
+
+            input {
+                padding: 16px;
+                border: none;
+                border-radius: 5px;
+                transition: border-color 0.3s ease-in-out;
+                outline: none;
+                color: #333;
+                background-color: #f4f4f4;
+                width: calc(100% - 30px);
+                margin:0 auto;
+            }
+            input::placeholder {
+                color: #959595;
+            }
+
+            input:focus {
+                border-color: #39778c;
+            }
+        }
+
+        button {
+            background-color: #2d6476;
+            color: #fff;
+            padding: 16px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #39778c;
+        }
+    }
+}
+
+.input-group h5{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #2c5158;
+    font-size: 16px;
+}
+
+.dash-container {
+    margin-top: 50px;
+    display: flex;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content-shift {
+    margin-left: 250px;
+}
+
+/* Welcome Message Styling */
+.welcome-container {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.welcome-message {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add transition effect for the sidebar */
+.sidebar {
+    transition: transform 0.3s ease;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding-top: 60px;
+    transition: left 0.3s ease; /* Smooth animation */
+}
+
+.sidebar-open {
+    left: 0; /* Slide the sidebar in */
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ecf0f1;
+    display: block;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    color: #15212c;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon-active {
+    transform: rotate(90deg); /* Rotate animation when clicked */
+    color: transparent; /* Hide the icon */
+}
+.menu-icon-active::after {
+    content: "\f00d"; /* Another icon */
+    color: #15212c;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+/* Table Styling */
+/* Sidebar and Main Content Adjustments */
+#contact-data .main-content {
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content-shift {
+    margin-left: 220px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4b6cb7;
+}
+
+.welcome-message {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #28a745;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.contact-table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table th {
+    background-color: #4b6cb7;
+    color: white;
+    text-align: center;
+}
+
+.contact-table td {
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Row Hover Animation */
+.contact-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+/* Keyframes for Welcome Message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

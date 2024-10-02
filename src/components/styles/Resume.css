@@ -1,0 +1,315 @@
+/* Container styling */
+.resume-container {
+    background-color: #fff;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+  
+.btn-home{
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.btn-home:hover{
+    background-color: #0056b3;
+}
+
+  .top-design{
+    margin-top: -80px;
+  }
+
+  /* Header styling */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic img {
+    width: 120px;
+    height: 140px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-container .pi{
+    margin-left: 20px;
+  }
+  .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .personal-info h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .personal-info .location,
+  .personal-info .contact {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  /* Section Common styling */
+  .section {
+    margin-bottom: 40px;
+    display: flex;
+  }
+  
+  .section h2 {
+    font-size: 20px;
+    color: #007bff;
+    padding-bottom: 8px;
+    font-weight: 700;
+    margin-right: 90px;
+  }
+  
+  /* Summary section */
+  .section p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  
+  /* Skills section */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 30px;
+  }
+  
+  .skills div {
+    flex: 0 0 auto;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills div:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Education section */
+  .education{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+
+  .education p {
+    margin-bottom: 12px;
+  }
+  
+  .education strong {
+    font-size: 16px;
+    color: #007bff;
+  }
+
+  .edu2 .year{
+    margin-right: 45px;
+  }
+  
+  /* Projects section */
+  .projects a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .projects a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Community Service section */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+ h2::before {
+    background-color: transparent;
+  }
+
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+}
+
+.divider .child-divider {
+    width: 20%;
+    height: 250%;
+    background-color: #007bff;
+    padding-top: -10px;
+    position: relative;
+    top: -3px;
+}
+.year{
+    float: right;
+}
+@media only screen and (max-width: 768px) {
+  
+    .edu-part{
+        display: block;
+    }
+    /* General container adjustments */
+    .resume-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+    
+    .top-design{
+        margin-top: -30px;
+        margin-bottom: 10px;
+      }
+    
+    /* Header adjustments */
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items:first baseline;
+    }
+    
+    .profile-pic img {
+      width: 100px;
+      height: 120px;
+      margin: 0 auto;
+    }
+    
+    .resume-container .pi {
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    
+    .personal-info h1 {
+      font-size: 24px;
+    }
+    
+    .personal-info .location,
+    .personal-info .contact {
+      font-size: 14px;
+    }
+  
+    /* Download button adjustments */
+    .btn-download {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    br{
+        display: none;
+    }
+
+    .projects br{
+        display: block;
+    }
+
+    /* Section titles adjustments */
+    .section h2 {
+      font-size: 18px;
+      width: 90%;
+    }
+  
+    /* Summary section adjustments */
+    .section p {
+      font-size: 14px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    
+  .edu2 .year{
+    margin-right: 0px;
+  }
+  
+    /* Skills Section adjustments */
+    .skills {
+      gap: 10px;
+    }
+
+    .skills-sec {
+        margin-left: -20px ;
+    }
+  
+    .skills div {
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  
+    /* Education and Project Sections adjustments */
+    .education strong {
+        display: block;
+    }
+    .education {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+
+
+    /* Community Service Section adjustments */
+    ul {
+      margin-left: 10px;
+    }
+  
+    ul li {
+      font-size: 14px;
+    }
+  
+    /* Divider adjustments for mobile */
+    .divider {
+      height: 1px;
+      margin-bottom: 10px;
+    }
+  
+    .divider .child-divider {
+      width: 30%;
+      top: -1px;
+    }
+
+    .community-service br{
+        display: block;
+    }
+  }
